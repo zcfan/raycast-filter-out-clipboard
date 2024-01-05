@@ -1,8 +1,8 @@
 {
   "$schema": "https://www.raycast.com/schemas/extension.json",
-  "name": "filter-out-clipboard",
-  "title": "filter out clipboard",
-  "description": "filter out clipboard",
+  "name": "raycast-filter-clipboard",
+  "title": "Raycast filter clipboard",
+  "description": "Raycast extension that filter clipboard content",
   "icon": "command-icon.png",
   "author": "zcfan",
   "owner": "alanslab",
@@ -13,8 +13,8 @@
   "commands": [
     {
       "name": "index",
-      "title": "filter out comma",
-      "description": "filter out comma from clipboard content",
+      "title": "filter comma",
+      "description": "filter comma from clipboard content",
       "mode": "no-view"
     }
   ],

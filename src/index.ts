@@ -1,7 +1,10 @@
 import { showHUD, Clipboard } from "@raycast/api";
 
 export default async function main() {
-  const now = new Date();
-  await Clipboard.copy(now.toLocaleDateString());
-  await showHUD("Copied date to clipboard");
+  const text = await Clipboard.readText()
+  const filteredText = text?.split(',').join('')
+  if (filteredText) {
+    await Clipboard.paste(filteredText)
+  }
+  await showHUD("filter out comma!");
 }
